@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Viewport Units Buggyfill™</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="test.css">
+  <style>
+    head {display: block}
+    #patched-viewport {
+      display: block;
+      padding: 10px;
+      white-space: pre;
+      font-family: monospace;
+    }
+  </style>
+  <style media="(max-width: 320px)">
+    body { width: 90vw; }
+  </style>
+  <style media="(min-width: 480px)">
+    body { width: 70vw; }
+  </style>
+</head>
+<body>
+  <script src="viewport-units-buggyfill.js"></script>
+  <script>window.viewportUnitsBuggyfill.init(true);</script>
+</body>
+</html>

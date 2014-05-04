@@ -1,0 +1,368 @@
+body {
+	background-color: #fff;
+	margin: 0;
+	background: url("../img/deadflower.jpg") 100% no-repeat;
+	background-attachment: fixed; 
+	background-position: center top;
+	padding: 0;
+}
+	
+article {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #111111;
+	font-family: "Merriweather", Georgia, serif;
+	font-weight: 300;
+	-webkit-hyphens: manual;
+	-moz-hyphens: manual;
+	hyphens: manual;
+}
+
+p.lede {
+	font-size: 24px;
+	line-height: 1.5;
+	color: #111111;
+	font-weight: 400;
+	margin-top: 70px;
+}
+
+p.lede::first-line {
+	color: #c00;
+	font-weight: bold;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-size: 1.3em;
+}
+
+p.open::first-line {
+	color: #c00;
+	font-weight: bold;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+p.open::first-letter {
+	float: left;
+	color: #c00;
+	font-size: 4.5em;
+	line-height: 0.4em;
+	padding: 16px 0 0 0;
+	margin: 8px 10px 0 0;
+	font-weight: 700;
+	font-family: "Lato", Helvetica, sans-serif;
+}
+
+p.lede::first-letter {
+	float: left;
+	color: #c00;
+	font-size: 4.5em;
+	line-height: 0.4em;
+	padding: 16px 0 0 0;
+	margin: 16px 10px 0 0;
+	font-weight: 700;
+	font-family: "Lato", Helvetica, sans-serif;
+}
+
+a {
+	color: #c00;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+.container-fluid {
+	padding: 0;
+	font: inherit;
+	background: #fff;
+}
+
+.story {
+	height: inherit;
+	padding: 0;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	margin: 40px auto;
+}
+
+#header {
+	height: 100vh;
+	max-height: 968px;
+	position: relative;
+	background: transparent!important;
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+}
+
+.titlegoodness {
+	font-weight: 700;
+	position: absolute;
+    width: 100%;
+    margin: 0 auto;
+	top: 50%;
+	padding: 0 20px;
+	height: 300px;
+	margin-top: -150px;
+}
+
+h1 {
+	font-size: 120px;
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+	line-height: 90%;
+	text-shadow: 0 0 .5em #000;
+	color: #fff; /* for testing */
+	font-family: "Lato", Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 750px) {
+
+   h1 { font-size: 40px; }
+
+}
+
+#header h2 {
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.2;
+	margin: 0 auto;
+	padding: 0 16px 0 16px;
+	text-shadow: 0 0 .25em #000;
+	color: #ffffff; /* for testing */
+	font-family: "Merriweather", Georgia, serif;
+	font-weight: 700;
+	max-width: 700px;
+	text-transform: none;
+}
+
+#hiddenlede {
+	font-size: 20px;
+	line-height: 1.2;
+	margin: 0 auto;
+	padding: 100px 0 0 0;
+	font-family: "Merriweather", Georgia, serif;
+	font-weight: 700;
+	max-width: 700px;
+	text-transform: none;
+	text-align: center;
+}
+
+.by {
+	display: block;
+	position: relative;
+	max-width: 200px;
+	text-align: center;
+	margin: -3.4em auto 0 auto;
+	padding: 12px 0 6px;
+	background-color: #fff;
+}
+
+.by p {
+	line-height: 1;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	z-index: 61;
+}
+
+.bold {
+	font-family: "Lato", Helvetica, sans-serif;
+	font-weight: 600;
+}
+
+#toc {
+	z-index: 1;
+	float: right;
+	right: 0;
+	background-color: #ffeeee;
+	width: 100%;
+	margin: 0;
+}
+
+#toc p {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 10px;
+	font-family: "Lato", Helvetica, sans-serif;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#toc a {
+	text-decoration: none;
+	color: #222;
+}
+
+#toc a:hover {
+	text-decoration: underline;
+	color: #c00;
+}
+
+#toc .divider {
+	padding: 0 10px;
+}
+
+#toc #s0l {
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 3em;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-weight: 300;
+	padding: 16px 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+h2 b {
+	font-weight: 700;
+}
+
+#bigimagewithquote1 {
+	background: url("../img/minfin.jpg") 100% 0 repeat fixed;
+}
+
+#bigimagewithquote2 {
+	background: url("../img/uni2.jpg") 100% 0 repeat fixed;
+}
+
+#bigimagewithquote3 {
+	background: url("../img/nass2.jpg") 100% 0 repeat fixed;
+}
+
+#bigimagewithquote4 {
+	background: url("../img/manwithflag.jpg") 100% 0 repeat fixed;
+}
+
+.row {
+	margin: 0;
+}
+
+.quoteleft {
+	padding: 40px 25px 0;
+}
+
+.quotelefta {
+	padding: 0 25px 40px;
+}
+
+.quoteleft p, .quotelefta p {
+	font-family: "Lato";
+	font-size: 3em;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 0 .25em #000;
+	line-height: 1;
+	text-align: right;
+	margin: 0;
+}
+
+.quoteright {
+	padding: 40px 25px 0;
+}
+
+.quoterighta {
+	padding: 0 25px 40px;
+}
+
+.quoteright p {
+	font-family: "Lato";
+	font-size: 3em;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 0 .25em #000;
+	line-height: 1;
+	margin: 0;
+}
+
+p.author {
+	font-family: "Lato", Helvetica, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 0 0 .25em #000;
+	line-height: 1;
+	margin: 0.75em 1em 0 0;
+}
+
+p.author b {
+	font-weight: 700;
+}
+
+.caption {
+	width: 100%;
+	vertical-align: baseline;
+	font-size: 12px;
+	font-family: "Merriweather", Helvetica, Arial, sans-serif;
+	text-align: right;
+	font-style: italic;
+	float: right;
+	margin-bottom: 2em;
+	line-height: 0.5;
+}
+
+.chart {
+	float: center;
+	width: 100%
+	max-width: 800px;
+	margin: 0 auto;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	margin: 40px auto;
+}
+
+.factbox {
+	padding: 2em;
+	margin: 20px 0;
+	position: relative;
+	border: 3px solid #c00;
+	background: #e6e6e6;
+}
+
+.left {
+	float: left;
+	margin: 0 20px 0 200px;
+}
+
+.factbox p.title {
+	font-size: 2em;
+	line-height: 1;
+	color: #c00;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-weight: 400;
+	padding: 0 0 1em 0;
+	margin: 0;
+}
+
+.factbox p {
+	font-size: 1.5em;
+	line-height: 1;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+}
+
+ul {
+	padding: 0 0.5em;
+	margin: 0 0 0 1em;
+}
+
+.gap {
+	padding-bottom: 50px;
+}
