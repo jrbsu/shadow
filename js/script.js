@@ -65,9 +65,17 @@ $(document).ready(function(){
 			$('#s4l').stop().animate({'color':'#c00'}, 200);
 		} else {
 			$('#s4l').stop().animate({'color':'#222'}, 200);
-		} 
+		}
 	});
 
+	var totalWords = 0;
+	$('p').each(function(i) {
+        var words = $(this).text().split(' ').length;
+        totalWords = totalWords + words;
+    	var timeread = Math.round(totalWords / 250);
+		$("#timeread").html(timeread + " minute read");
+    });
+	
 /* var resizeTimer;
 $(window).resize(function(){
     clearTimeout(resizeTimer);

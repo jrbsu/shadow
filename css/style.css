@@ -25,12 +25,19 @@ p {
 	hyphens: manual;
 }
 
+#timeread {
+	text-align: right;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
 p.lede {
 	font-size: 24px;
 	line-height: 1.5;
 	color: #111111;
+	margin-top: 60px;
 	font-weight: 400;
-	margin-top: 70px;
 }
 
 p.lede::first-line {
@@ -130,7 +137,8 @@ h1 {
 @media only screen and (max-width: 750px) {
 
    h1 { font-size: 40px; }
-
+   
+   #timeread { text-align: center; }
 }
 
 #header h2 {
