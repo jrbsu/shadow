@@ -1,4 +1,6 @@
 An economy in the dark
 ======================
 
-"snowfall" news piece for class
+### "Snowfall" news piece for class.
+Really hacky though, would totally appreciate tips on optimizing this!
+[See this in action](http://jossu.co.uk/shadow).
