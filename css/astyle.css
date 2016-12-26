@@ -11,31 +11,21 @@ article {
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
-	text-align: justify;
+	text-align: left;
 }
 
 p {
 	font-size: 18px;
 	line-height: 1.5;
-	color: #111111;
+	color: #111;
 	font-family: "Merriweather", Georgia, serif;
 	font-weight: 300;
-	-webkit-hyphens: manual;
-	-moz-hyphens: manual;
-	hyphens: manual;
-}
-
-#timeread {
-	text-align: right;
-	position: absolute;
-	top: 20px;
-	right: 20px;
 }
 
 p.lede {
 	font-size: 24px;
 	line-height: 1.5;
-	color: #111111;
+	color: #111;
 	margin-top: 60px;
 	font-weight: 400;
 }
@@ -77,13 +67,13 @@ p.lede::first-letter {
 }
 
 a {
-	color: #c00;
-	text-decoration: none;
+	color: #c00!important;
+	text-decoration: none!important;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: #000;
+	text-decoration: underline!important;
+	color: #000!important;
 }
 
 .container-fluid {
@@ -122,26 +112,29 @@ a:hover {
 	margin-top: -150px;
 }
 
-h1 {
-	font-size: 120px;
+.titlegoodness h1 {
+	font-size: 6em;
 	text-align: center;
+    text-transform: uppercase;
 	margin: 0;
 	padding-top: 10px;
 	line-height: 90%;
-	text-shadow: 0 0 .5em #000;
 	color: #fff; /* for testing */
 	font-family: "Lato", Helvetica, sans-serif;
 	font-weight: 700;
 }
 
-@media only screen and (max-width: 750px) {
-
-   h1 { font-size: 40px; }
-   
-   #timeread { text-align: center; }
+@media only screen and (max-width: 550px) {
+    .titlegoodness {
+        top: 40%;
+    }
+    
+    .titlegoodness h1 {
+        font-size: 4em;
+    }
 }
 
-#header h2 {
+#header .blurb {
 	font-size: 1.5em;
 	text-align: center;
 	line-height: 1.2;
@@ -155,14 +148,13 @@ h1 {
 	text-transform: none;
 }
 
-#hiddenlede {
+.hiddenlede {
 	font-size: 20px;
 	line-height: 1.2;
 	margin: 0 auto;
 	padding: 100px 0 0 0;
 	font-family: "Merriweather", Georgia, serif;
 	font-weight: 700;
-	max-width: 700px;
 	text-transform: none;
 	text-align: center;
 }
@@ -183,6 +175,10 @@ h1 {
 	font-weight: 400;
 	font-size: 20px;
 	z-index: 61;
+}
+
+.hiddenlede p {
+    font-weight: 700;
 }
 
 .bold {
@@ -227,13 +223,20 @@ h1 {
 	font-weight: 600;
 }
 
-h2 {
-	font-size: 3em;
-	font-family: "Lato", Helvetica, sans-serif;
-	font-weight: 300;
+.titlegoodness h2 {
+	font-size: 1.5em;
+	font-family: "Merriweather", Helvetica, sans-serif!important;
+	font-weight: 700;
+    width: 90%;
 	padding: 16px 0;
 	margin: 0 auto;
-	text-align: left;
+	text-align: center;
+    color: #fff;
+}
+
+h2.heading {
+    font-family: "Lato", Helvetica, sans-serif;
+	font-size: 3em;
 }
 
 h2 b {
@@ -258,6 +261,7 @@ h2 b {
 
 .row {
 	margin: 0;
+    padding: 0 2em;
 }
 
 .quoteleft {
