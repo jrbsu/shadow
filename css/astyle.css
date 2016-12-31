@@ -5,6 +5,7 @@ body {
 	background-attachment: fixed; 
 	background-position: center top;
 	padding: 0;
+    overflow-x: hidden;
 }
 	
 article {
@@ -18,8 +19,8 @@ p {
 	font-size: 18px;
 	line-height: 1.5;
 	color: #111;
-	font-family: "Merriweather", Georgia, serif;
-	font-weight: 300;
+	font-family: "Libre Franklin", Georgia, serif;
+	font-weight: 400;
 }
 
 p.lede {
@@ -33,37 +34,15 @@ p.lede {
 p.lede::first-line {
 	color: #c00;
 	font-weight: bold;
-	font-family: "Lato", Helvetica, sans-serif;
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-size: 1.3em;
 }
 
 p.open::first-line {
 	color: #c00;
 	font-weight: bold;
-	font-family: "Lato", Helvetica, sans-serif;
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-size: 1.2em;
-}
-
-p.open::first-letter {
-	float: left;
-	color: #c00;
-	font-size: 4.5em;
-	line-height: 0.4em;
-	padding: 16px 0 0 0;
-	margin: 8px 10px 0 0;
-	font-weight: 700;
-	font-family: "Lato", Helvetica, sans-serif;
-}
-
-p.lede::first-letter {
-	float: left;
-	color: #c00;
-	font-size: 4.5em;
-	line-height: 0.4em;
-	padding: 16px 0 0 0;
-	margin: 16px 10px 0 0;
-	font-weight: 700;
-	font-family: "Lato", Helvetica, sans-serif;
 }
 
 a {
@@ -110,7 +89,6 @@ a:hover {
 	padding: 0 20px;
 	height: 300px;
 	margin-top: -150px;
-	text-shadow: 0 0 1em #000;
 }
 
 .titlegoodness h1 {
@@ -120,19 +98,48 @@ a:hover {
 	margin: 0;
 	padding-top: 10px;
 	line-height: 90%;
-	color: #fff; /* for testing */
-	font-family: "Lato", Helvetica, sans-serif;
+	color: rgba(0,0,0,0.75); /* for testing */
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-weight: 900;
 }
 
 @media only screen and (max-width: 550px) {
     .titlegoodness {
-        top: 40%;
+        top: 50%;
     }
     
     .titlegoodness h1 {
-        font-size: 4em;
+        font-size: 5em;
     }
+}
+
+.title-blurb {
+    width: 75%;
+	padding: 16px 0;
+	margin: 0 auto;
+	text-shadow: 0 0 1em #000;
+}
+
+.by {
+	display: block;
+	position: relative;
+	max-width: 300px;
+	text-align: center;
+	margin: -3.4em auto 0 auto;
+	padding: 12px 0 6px;
+	background: rgba(0,0,0,0.75);
+}
+
+.by p {
+	line-height: 1;
+	font-weight: 400;
+	font-size: 20px;
+	z-index: 61;
+    color: #fff;
+}
+
+.bold {
+	font-weight: 600;
 }
 
 .hiddenlede {
@@ -140,78 +147,36 @@ a:hover {
 	line-height: 1.2;
 	margin: 0 auto;
 	padding: 100px 0 0 0;
-	font-family: "Merriweather", Georgia, serif;
 	font-weight: 700;
 	text-transform: none;
 	text-align: center;
 }
 
-.by {
-	display: block;
-	position: relative;
-	max-width: 200px;
-	text-align: center;
-	margin: -3.4em auto 0 auto;
-	padding: 12px 0 6px;
-	background-color: #fff;
-}
-
-.by p {
-	line-height: 1;
-	font-family: "Lato", Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 20px;
-	z-index: 61;
-}
-
 .hiddenlede p {
-    font-weight: 700;
-}
-
-.bold {
-	font-family: "Lato", Helvetica, sans-serif;
-	font-weight: 600;
-}
-
-#toc {
-	z-index: 1;
-	float: right;
-	right: 0;
-	background-color: #ffeeee;
-	width: 100%;
-	margin: 0;
-}
-
-#toc p {
-	font-size: 1.2em;
-	margin: 0;
-	padding: 10px;
-	font-family: "Lato", Helvetica, sans-serif;
-	line-height: 1.2;
-	text-transform: uppercase;
+	color: #c00;
+	font-weight: 700;
+	font-family: "Rubik", Helvetica, sans-serif;
+	font-size: 1.3em;
+    line-height: 1.15;
 	text-align: center;
 }
 
-#toc a {
-	text-decoration: none;
-	color: #222;
+.title-blurb p {
+	color: #fff;
+	font-weight: 500;
+	font-family: "Rubik", Helvetica, sans-serif;
+	font-size: 1.3em;
+    line-height: 1.15;
+	text-align: center;
 }
 
-#toc a:hover {
-	text-decoration: underline;
-	color: #c00;
-}
-
-#toc .divider {
-	padding: 0 10px;
-}
-
-#toc #s0l {
-	font-weight: 600;
+.row {
+	margin: 0;
+    padding: 0 2em;
 }
 
 h2.heading {
-    font-family: "Lato", Helvetica, sans-serif;
+    font-family: "Rubik", Helvetica, sans-serif;
 	font-size: 3em;
 }
 
@@ -235,11 +200,6 @@ h2 b {
 	background: url("../img/manwithflag.jpg") 100% 0 repeat fixed;
 }
 
-.row {
-	margin: 0;
-    padding: 0 2em;
-}
-
 .quoteleft {
 	padding: 40px 25px 0;
 }
@@ -249,7 +209,7 @@ h2 b {
 }
 
 .quoteleft p, .quotelefta p {
-	font-family: "Lato";
+	font-family: "Rubik";
 	font-size: 3em;
 	font-weight: 700;
 	color: #fff;
@@ -268,7 +228,7 @@ h2 b {
 }
 
 .quoteright p {
-	font-family: "Lato";
+	font-family: "Rubik";
 	font-size: 3em;
 	font-weight: 700;
 	color: #fff;
@@ -278,7 +238,7 @@ h2 b {
 }
 
 p.author {
-	font-family: "Lato", Helvetica, sans-serif;
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-size: 1em;
 	font-style: normal;
 	font-weight: 400;
@@ -294,7 +254,7 @@ p.author b {
 
 .chart {
 	float: center;
-	width: 100%
+	width: 100%;
 	max-width: 800px;
 	margin: 0 auto;
 	border-top: 1px solid grey;
@@ -319,7 +279,7 @@ p.author b {
 	font-size: 2em;
 	line-height: 1;
 	color: #c00;
-	font-family: "Lato", Helvetica, sans-serif;
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-weight: 400;
 	padding: 0 0 1em 0;
 	margin: 0;
@@ -328,7 +288,7 @@ p.author b {
 .factbox p {
 	font-size: 1.5em;
 	line-height: 1;
-	font-family: "Lato", Helvetica, sans-serif;
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
 	text-align: left;
@@ -342,17 +302,41 @@ ul {
 .gap {
 	padding-bottom: 50px;
 }
-.title-blurb {
-    width: 75%;
-	padding: 16px 0;
-	margin: 0 auto;
+
+#toc {
+	z-index: 1;
+	float: left;
+	left: 0;
+	background-color: #eee;
+	width: 100%;
+	margin: 0;
+    overflow-x: hidden;
 }
 
-.title-blurb p {
-	font-size: 1.5em;
-	font-family: "Merriweather", Helvetica, sans-serif!important;
-	font-weight: 700;
+#toc p {
+	font-size: 1.2em;
 	margin: 0;
+	padding: 10px;
+	font-family: "Rubik", Helvetica, sans-serif;
+	line-height: 1.2;
+	text-transform: uppercase;
 	text-align: center;
-    color: #fff;
+}
+
+#toc a {
+	text-decoration: none;
+	color: #222;
+}
+
+#toc a:hover {
+	text-decoration: underline;
+	color: #c00;
+}
+
+#toc .divider {
+	padding: 0 10px;
+}
+
+#toc #s0l {
+	font-weight: 600;
 }
