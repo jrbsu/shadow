@@ -8,6 +8,8 @@ $(document).ready(function(){
 	var heading2Position = $('#s2').offset();
 	var heading3Position = $('#s3').offset();
 	var heading4Position = $('#s4').offset();
+    
+    window.viewportUnitsBuggyfill.init();
 	
 	$(window).scroll(function(){
     	if($(window).scrollTop() > elementPosition.top){
